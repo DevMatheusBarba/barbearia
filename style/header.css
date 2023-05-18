@@ -1,0 +1,36 @@
+.caixa{
+    background-color: var(--nav-fundo);
+    text-align: center;
+}
+
+.lista ul{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding-bottom: 5%;
+}
+
+.lista__item a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--fonte-nav);
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+@media screen and (min-width:1280px) {
+        .caixa{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .lista ul{
+            margin-top: 10vh; 
+        }
+        
+        .lista ul li:hover{
+            transform: scale(1.05);
+        }
+        
+}
+

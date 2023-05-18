@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('style/header.css');
+@import url('style/sobre.css');
+@import url('style/localizacao.css');
+@import url('style/beneficios.css');
+@import url('style/produtos.css');
+@import url('style/contato.css');
+
+
+:root{
+    --nav-fundo: #bbbbbb;
+    --fonte-nav: #000;
+    --cor-fonte: #000;
+    --fundo-sobre: #fefefe; 
+    --fundo-restante: #888;
+    --label-lua: url('https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png');
+    --fundo-label: #fff
+}
+
+
+.dark-mode{
+    --fundo-sobre: #02353a;
+    --fonte-nav: #BFBFBF;
+    --fundo-restante: #011F26;
+    --cor-fonte: #efeded;
+    --nav-fundo: #025E73;
+    --label-lua: url('https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png');
+    --fundo-label: #025E73
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background: var(--fundo-sobre);
+    transition: 2s;
+}
+
+main{
+    color: var(--cor-fonte);
+}
+
+
+.banner{
+    width: 100vw;
+}
+
+.titulo{
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 1em;
+    font-weight: bold;
+    clear: left;
+}
+
+.titulo::after{
+    content: ' ]';
+}
+
+.titulo::before{
+    content: '[ ';
+}
+
+footer{
+    background-image: url('img/bg.jpg');
+    text-align: center;
+    padding: 2em 0;
+}
+
+.Copyright{
+    padding-top: 1em;
+    color: #fff;
+    font-size: 0.8em;  
+}
+
+@media screen and (min-width:1280px) {
+    .banner{
+       height: 290px;
+    }
+}
+
+.mudar-tema{
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    background-image: var(--label-lua);
+    background-repeat: no-repeat;
+    padding: 2em;
+    cursor: pointer;
+}
+
+#btn{
+    display: none;
+}
+

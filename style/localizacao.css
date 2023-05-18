@@ -1,0 +1,17 @@
+.localizacao{
+    text-align: center;
+    padding: 3em 0;
+    background: linear-gradient(var(--fundo-sobre), var(--fundo-restante))
+}
+
+.localizacao p{
+    padding-bottom: 2em;
+}
+
+@media screen and (min-width:1280px) {
+
+    .localizacao__mapa{
+        width: 60%;
+        margin: 0 auto;
+    }
+}

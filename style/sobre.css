@@ -1,0 +1,33 @@
+.sobre{
+margin: 1em 1em 3em 1em;
+text-align: justify;
+padding: 3em 0 ;
+background-color: var(--fundo-sobre);
+background-color: inherit
+    
+}
+
+.sobre__imagem{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0
+}
+
+.sobre__texto{
+    padding-bottom: 2em;
+}
+
+.sobre strong{
+    font-weight: 700;
+}
+
+.sobre em{
+    font-style: italic;
+}
+
+@media screen and (min-width:1280px) {
+    .sobre {
+       max-width: 60vw;
+       margin: 0 auto;
+    }
+}
